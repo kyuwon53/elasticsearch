@@ -1,0 +1,15 @@
+es:
+  host: localhost
+  port: 9200
+  username: elastic
+  password: YK+M5s275ztuh+kXCLns
+  schemeName: https
+  ssl: pwd
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          elasticsearch:
+            client:
+              WIRE: TRACE
