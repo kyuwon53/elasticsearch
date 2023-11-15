@@ -1,10 +1,18 @@
+spring:
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+  elasticsearch:
+    uris: https://localhost:9200
 es:
   host: localhost
   port: 9200
   username: elastic
-  password: YK+M5s275ztuh+kXCLns
+  password: IR2-cc3ZdhdmBxIZ0_Z3
   schemeName: https
   ssl: pwd
+  fingerprint: 85f04fa7e1127ae20b80404bbccbf8be7574059b2065ff8c2d1c9be2a0cdd7f3
 logging:
   level:
     org:
@@ -13,3 +21,11 @@ logging:
           elasticsearch:
             client:
               WIRE: TRACE
+springdoc:
+  api-docs:
+    path: /resource/static/v3/api-docs
+  swagger-ui:
+    path: /resource/static/swagger
+    config-url: /resource/static/v3/api-docs/swagger-config
+    url: /resource/static/v3/api-docs
+    disable-swagger-default-url: true
